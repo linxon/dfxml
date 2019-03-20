@@ -646,6 +646,9 @@ void dfxml_writer::xmlout(const string &tag,const string &value,const string &at
 #include <exiv2/image.hpp>
 #include <exiv2/exif.hpp>
 #include <exiv2/error.hpp>
+#if HAVE_EXIV2_API_0_27
+#include <exiv2/version.hpp>
+#endif
 #endif
 
 #ifdef HAVE_HASHDB
